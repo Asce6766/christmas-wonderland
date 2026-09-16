@@ -1,5 +1,5 @@
 const form = document.getElementById("interestForm");
-const status = document.getElementById("formStatus");
+const status = document.getElementById("successMessage");
 const submitButton = form.querySelector('button[type="submit"]');
 
 form.addEventListener("submit", async function (event) {
