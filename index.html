@@ -156,12 +156,15 @@
           </p>
         </div>
 
-        <form id="interestForm" class="interest-form">
+        <form id="interestForm" class="interest-form" action="https://formspree.io/f/xbglrevr" method="POST">
           <label for="name">Vorname</label>
           <input id="name" name="name" type="text" autocomplete="given-name" required>
 
           <label for="email">E-Mail-Adresse</label>
           <input id="email" name="email" type="email" autocomplete="email" required>
+
+          <input type="hidden" name="_subject" value="Neue Christmas Wonderland Interessenbekundung">
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;height:0;width:0;">
 
           <fieldset class="package-choice">
             <legend>Welches Paket möchtest du vormerken?</legend>
