@@ -163,11 +163,35 @@
           <label for="email">E-Mail-Adresse</label>
           <input id="email" name="email" type="email" autocomplete="email" required>
 
-          <fieldset>
-            <legend>Wie groß ist dein Interesse?</legend>
-            <label class="radio"><input type="radio" name="interest" value="Informieren" required> <span>Ich möchte erst einmal informiert werden.</span></label>
-            <label class="radio"><input type="radio" name="interest" value="Wahrscheinlich mieten"> <span>Ich würde das Set wahrscheinlich mieten.</span></label>
-            <label class="radio"><input type="radio" name="interest" value="Zum Start reservieren"> <span>Ich möchte zum Start möglichst reservieren.</span></label>
+          <fieldset class="package-choice">
+            <legend>Welches Paket möchtest du vormerken?</legend>
+
+            <label class="package-option">
+              <input type="radio" name="interest" value="1 Christmas Wonderland – 89,90 €" required>
+              <span class="package-card">
+                <strong>🎄 1 × Christmas Wonderland</strong>
+                <span>89,90 € pro Saison</span>
+                <small>Für ein Zuhause</small>
+              </span>
+            </label>
+
+            <label class="package-option">
+              <input type="radio" name="interest" value="2 Christmas Wonderlands – 179,80 €">
+              <span class="package-card">
+                <strong>🎄🎄 2 × Christmas Wonderland</strong>
+                <span>179,80 € pro Saison</span>
+                <small>Für zwei Räume oder Haushalte</small>
+              </span>
+            </label>
+
+            <label class="package-option">
+              <input type="radio" name="interest" value="Erst mehr erfahren">
+              <span class="package-card">
+                <strong>💬 Erst mehr erfahren</strong>
+                <span>Noch keine Entscheidung</span>
+                <small>Wir melden uns mit weiteren Informationen</small>
+              </span>
+            </label>
           </fieldset>
 
           <button class="button button-primary button-full" type="submit">🎄 Interesse vormerken</button>
@@ -175,8 +199,7 @@
             Dies ist zunächst eine unverbindliche Interessenbekundung und keine Bestellung.
           </p>
           <p id="successMessage" class="success" hidden>
-            Danke! Deine Interessenbekundung wurde lokal erfasst. Für einen echten Markttest
-            muss das Formular noch mit einem E-Mail-/Formular-Dienst verbunden werden.
+            Danke! Deine Interessenbekundung ist angekommen. Wir melden uns, sobald Christmas Wonderland für Weihnachten 2026 konkret wird.
           </p>
         </form>
       </div>
